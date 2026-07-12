@@ -1,0 +1,12 @@
+[project]
+name = "numpy-neural-network"
+version = "0.1.0"
+description = "NumPy로 신경망의 기본 원리를 직접 구현하는 첫 번째 실습"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy>=2.0",
+]
+
+[dependency-groups]
+dev = []
