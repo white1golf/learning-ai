@@ -26,14 +26,20 @@ uv run python main.py
 | 02 | `02_dense_layer.py` | 여러 뉴런, 완전연결층과 배열 shape | `uv run python 02_dense_layer.py` |
 | 03 | `03_batch.py` | 여러 입력 샘플의 배치 처리, 전치와 브로드캐스팅 | `uv run python 03_batch.py` |
 | 04 | `04_activation_functions.py` | Step, Sigmoid, ReLU와 비선형성 | `uv run python 04_activation_functions.py` |
+| 05 | `05_two_layer_forward.py` | 두 개의 완전연결층과 ReLU를 연결한 순전파 | `uv run python 05_two_layer_forward.py` |
+| 06 | `06_loss_functions.py` | 회귀와 분류, 클래스, MSE, Softmax와 교차 엔트로피 | `uv run python 06_loss_functions.py` |
+| 07 | `07_numerical_gradient_descent.py` | 수치 미분, 기울기와 경사하강법으로 가중치 갱신 | `uv run python 07_numerical_gradient_descent.py` |
+
+## 현재 학습 흐름
+
+- 05번에서는 사람이 임의로 정한 weights(가중치)와 biases(편향)로 forward pass(순전파)를 계산했다. 아직 학습은 일어나지 않았다.
+- 06번에서는 regression(회귀)과 classification(분류)의 차이를 먼저 익힌다. MSE는 회귀용 별도 예제로 살펴보고, 05번의 출력은 두 class(클래스)의 점수라고 가정해 분류 손실을 계산한다.
+- 07번에서는 가중치가 하나인 회귀 문제로 잠시 단순화한다. 매개변수 변화에 따른 손실 변화를 수치 미분으로 구하고, 경사하강법으로 가중치를 반복 갱신한다.
+- 08번에서는 다시 여러 매개변수를 가진 신경망으로 돌아가, 역전파로 모든 기울기를 효율적으로 계산한다.
 
 ## 앞으로 구현할 내용
 
-1. 입력과 가중치의 행렬 연산
-2. 활성화 함수
-3. 손실 함수
-4. 수치 미분과 경사하강법
-5. 역전파
-6. 2층 신경망 학습
+1. 역전파
+2. 2층 신경망 학습
 
-이후 실습도 `02_...py`, `03_...py`처럼 새 파일로 추가합니다.
+이후 실습도 `08_...py`, `09_...py`처럼 새 파일로 추가합니다.
