@@ -107,12 +107,15 @@ learning-ai/
 - 완료: 여러 뉴런을 묶은 완전연결층(Dense Layer)
 - 완료: 여러 입력 샘플을 한 번에 처리하는 배치(Batch)
 - 완료: 비선형성을 만드는 활성화 함수
-- 다음 실습: 두 개의 완전연결층을 연결한 작은 신경망의 순전파
+- 완료: 두 개의 완전연결층을 연결한 작은 신경망의 순전파
+- 완료: MSE와 교차 엔트로피를 이용한 손실 계산
+- 완료: 수치 미분과 경사하강법을 이용한 가중치 갱신
+- 다음 실습: 역전파로 여러 매개변수의 기울기를 효율적으로 계산하기
 
 현재 폴더로 이동해 다음과 같이 실행합니다.
 
 ```bash
 cd 01-numpy-neural-network
 uv sync
-uv run python 01_weights_and_bias.py
+uv run python 07_numerical_gradient_descent.py
 ```
