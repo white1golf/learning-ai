@@ -26,7 +26,8 @@
 - 학습 및 평가 루프 작성
 - 과적합의 발생과 대응 방법 확인
 
-예정 폴더: `02-pytorch-mnist/`
+폴더: `02-pytorch-mnist/`
+
 
 ### 03. 언어 모델의 출발점 만들기
 
@@ -101,21 +102,16 @@ learning-ai/
 
 ## 현재 진행 상황
 
-- 현재 단계: **01. 작은 신경망 직접 구현**
-- 완료: Python·uv·NumPy 환경 구성 및 검증
-- 완료: 단일 뉴런의 가중치와 편향
-- 완료: 여러 뉴런을 묶은 완전연결층(Dense Layer)
-- 완료: 여러 입력 샘플을 한 번에 처리하는 배치(Batch)
-- 완료: 비선형성을 만드는 활성화 함수
-- 완료: 두 개의 완전연결층을 연결한 작은 신경망의 순전파
-- 완료: MSE와 교차 엔트로피를 이용한 손실 계산
-- 완료: 수치 미분과 경사하강법을 이용한 가중치 갱신
-- 다음 실습: 역전파로 여러 매개변수의 기울기를 효율적으로 계산하기
+- 현재 단계: **02. PyTorch로 딥러닝 모델 학습**
+- 완료(01 폴더): NumPy로 뉴런·층·활성화·손실·수치미분·역전파·XOR 학습
+- 완료: 텐서와 autograd로 01번 개념을 PyTorch에 연결
+- 완료: MNIST 데이터셋과 DataLoader 이해하기
+- 다음 실습: MLP 분류기의 학습/평가 루프 작성하기
 
 현재 폴더로 이동해 다음과 같이 실행합니다.
 
 ```bash
-cd 01-numpy-neural-network
+cd 02-pytorch-mnist
 uv sync
-uv run python 07_numerical_gradient_descent.py
+uv run python 03_training_loop.py
 ```
