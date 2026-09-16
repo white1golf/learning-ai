@@ -106,12 +106,13 @@ learning-ai/
 - 완료(01 폴더): NumPy로 뉴런·층·활성화·손실·수치미분·역전파·XOR 학습
 - 완료: 텐서와 autograd로 01번 개념을 PyTorch에 연결
 - 완료: MNIST 데이터셋과 DataLoader 이해하기
-- 다음 실습: MLP 분류기의 학습/평가 루프 작성하기
+- 완료: MLP 분류기의 학습/평가 루프 작성
+- 다음 실습: 과적합 관찰과 Dropout/weight decay 대응
 
 현재 폴더로 이동해 다음과 같이 실행합니다.
 
 ```bash
 cd 02-pytorch-mnist
 uv sync
-uv run python 03_training_loop.py
+uv run python 04_overfitting.py
 ```

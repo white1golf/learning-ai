@@ -24,6 +24,7 @@ CUDA가 없어도 CPU로 실습할 수 있습니다.
 | 01 | `01_tensors_and_autograd.py` | 텐서, autograd, Linear와 01번 개념의 대응 | `uv run python 01_tensors_and_autograd.py` |
 | 02 | `02_mnist_dataset.py` | MNIST, Dataset, DataLoader, 배치 shape | `uv run python 02_mnist_dataset.py` |
 | 03 | `03_training_loop.py` | MLP 분류기, CrossEntropy, 학습/평가 루프 | `uv run python 03_training_loop.py` |
+| 04 | `04_overfitting.py` | 과적합 관찰, Dropout과 weight decay 비교 | `uv run python 04_overfitting.py` |
 
 ## 현재 학습 흐름
 
@@ -31,10 +32,9 @@ CUDA가 없어도 CPU로 실습할 수 있습니다.
 - 02번의 01 파일은 그 지식을 PyTorch 텐서/`loss.backward()`/`nn.Linear`로 옮긴다.
 - 02번의 02 파일은 MNIST를 내려받고 Dataset/DataLoader로 배치를 만든다.
 - 02번의 03 파일은 모델과 optimizer로 실제 숫자 분류기를 학습·평가한다.
-- 다음 실습에서는 학습/시험 성능 차이를 보며 과적합과 대응을 다룬다.
+- 02번의 04 파일은 작은 학습셋 + 넓은 모델로 과적합을 보이게 하고 규제로 완화한다.
 
-## 앞으로 구현할 내용
+## 이 폴더의 다음
 
-1. 과적합과 대응
-
-이후 실습도 `04_...py`처럼 새 파일로 추가합니다.
+02번 폴더의 로드맵은 04번에서 한 바퀴 완성된다.  
+다음 큰 단계는 상위 `README.md`의 **03. 언어 모델의 출발점 만들기**이다.
